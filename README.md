@@ -64,6 +64,7 @@ A modern **Face Recognition-based Attendance System** built with **C++ (Qt)**, *
 
 ```bash
 git clone https://github.com/balwantsinghmnit/VisionEntry.git
+```
 cd VisionEntry
 Open VisionEntry.pro in Qt Creator
 
@@ -72,7 +73,7 @@ Configure MySQL connection in DBManager.cpp
 Build the project
 
 Ensure Python & MySQL are accessible from system PATH
-
+```bash
 📂 Project Structure
 VisionEntry/
 ├── src/                     # C++ source code (Qt)
