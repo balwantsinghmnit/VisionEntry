@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackupRestoreDialog</class>
+ <widget class="QDialog" name="BackupRestoreDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Backup &amp; Restore</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,1,1">
+   <item>
+    <widget class="QLabel" name="headingLabel">
+     <property name="text">
+      <string>Backup &amp; Restore Options</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Backup Button -->
+   <item>
+    <widget class="QPushButton" name="backupButton">
+     <property name="text">
+      <string>🗄️ Backup Database</string>
+     </property>
+     <property name="minimumHeight">
+      <number>36</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+        QPushButton {
+          background-color: #2d89ef;
+          color: white;
+          border-radius: 5px;
+          font-size: 11pt;
+        }
+        QPushButton:hover {
+          background-color: #1e5fa6;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Restore Button -->
+   <item>
+    <widget class="QPushButton" name="restoreButton">
+     <property name="text">
+      <string>♻️ Restore Database</string>
+     </property>
+     <property name="minimumHeight">
+      <number>36</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+        QPushButton {
+          background-color: #28a745;
+          color: white;
+          border-radius: 5px;
+          font-size: 11pt;
+        }
+        QPushButton:hover {
+          background-color: #1e7e34;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Close Button -->
+   <item>
+    <widget class="QPushButton" name="closeButton">
+     <property name="text">
+      <string>❌ Close</string>
+     </property>
+     <property name="minimumHeight">
+      <number>30</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+        QPushButton {
+          background-color: #6c757d;
+          color: white;
+          border-radius: 5px;
+          font-size: 10pt;
+        }
+        QPushButton:hover {
+          background-color: #5a6268;
+        }
+      </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

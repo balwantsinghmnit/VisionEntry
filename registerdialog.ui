@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterDialog</class>
+ <widget class="QDialog" name="RegisterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x> <y>0</y> <width>420</width> <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Register New User</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QPushButton {
+  background-color: #2e89ff;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font: 10pt "Segoe UI";
+}
+QPushButton:hover {
+  background-color: #1c6edb;
+}
+QGroupBox {
+  font: bold 10pt "Segoe UI";
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+QGroupBox::title {
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 0 6px;
+}
+QLabel, QLineEdit, QComboBox {
+  font: 10pt "Segoe UI";
+}
+QLabel#cameraLabel {
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
+  font: italic 9pt "Segoe UI";
+}
+   </string>
+  </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_userInfo">
+     <property name="title">
+      <string>Login Information</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_username">
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="usernameLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_password">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="passwordLineEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_fullname">
+        <property name="text">
+         <string>Full Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="fullNameLineEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_role">
+        <property name="text">
+         <string>Role:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="roleComboBox">
+        <item><property name="text"><string>Admin</string></property></item>
+        <item><property name="text"><string>HR</string></property></item>
+        <item><property name="text"><string>Employee</string></property></item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="groupBox_face">
+     <property name="title">
+      <string>Face Registration</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="cameraLabel">
+        <property name="minimumSize">
+         <size><width>320</width><height>240</height></size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="text">
+         <string>No Camera Feed</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="captureButton">
+        <property name="text">
+         <string>Capture Face</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size><width>0</width><height>0</height></size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

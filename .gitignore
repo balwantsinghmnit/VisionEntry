@@ -1,0 +1,19 @@
+# Build and compiler outputs
+build*/
+debug/
+release/
+*.user
+*.pro.user
+*.obj
+*.o
+*.exe
+*.dll
+*.so
+*.log
+*.qmake.stash
+Makefile*
+ui_*.h
+
+# Python cache
+*.pyc
+__pycache__/
